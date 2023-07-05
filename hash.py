@@ -10,6 +10,7 @@ colorama.init()
 
 colors = [Fore.MAGENTA, Fore.BLUE, Fore.GREEN, Fore.RED, Fore.CYAN, Fore.YELLOW + Style.BRIGHT, Fore.YELLOW + Style.BRIGHT]
 
+
 print(" ➖➖➖🟥➖🟪🟪🟪  ")
 print(" ➖➖➖➖🟥🟪🔳🟪🟪")
 print(" ➖➖➖🟥➖➖🟪🟪🟪")
@@ -18,9 +19,9 @@ print(" ➖➖➖➖➖➖➖🟪🟪")
 print(" ➖🟪🟪➖🟪🟪➖🟪🟪")
 print(" 🟪🟪➖🟪🟪🟪🟪🟪🟪")
 print(" 🟪🟪🟪🟪➖🟪🟪🟪🟪")
-print(" ➖🟪🟪➖➖➖🟪🟪  ")
-print("Python Hash-Cracker ")
-print("| SICARIO | 2023 |  ")
+print(" ➖🟪🟪➖➖➖🟪🟪      Python Hash-Cracker")
+print(" ")
+print("		    SICARIO | 2023   ")
 
 
 def checkOS():
@@ -114,28 +115,44 @@ class HashCracking:
             exit()
 
 
+def print_help():
+    print("Usage: python hash_cracker.py")
+    print("Options:")
+    print("  --help\t\t\tDisplay this help message")
+    print("  --Accepted-hash-type\t\tEnter the type of hash [md5, sha1, sha224, sha384, sha256, sha512]")
+    print("  --hash\t\t\tHash value to crack, Example: 0a52730597fb4ffa01fc117d9e71e3a9")
+    print("  --wordlist\t\t\tPath to the wordlist file (default: /usr/share/wordlists/rockyou.txt)")
+    print("  --verbose\t\t\tEnable verbose mode (y/n)")
+    print("  --brute-force\t\t\tEnable brute-force mode (y/n)")
+
+
 def main():
     hashType = None
     userHash = None
-    wordlist = None
+    wordlist = "/usr/share/wordlists/rockyou.txt"
     verbose = None
     numbersBruteForce = False
     print("[Running on %s]\n" % checkOS())
+
+    if "--help" in sys.argv:
+        print_help()
+        sys.exit()
+
     try:
         print("[*] Options:")
         hashType = input(colors[1] + "[*] Enter the type of hash [See supported hashes]: " + Style.RESET_ALL).strip().lower()
         userHash = input(colors[2] + "[*] Hash: " + Style.RESET_ALL).strip().lower()
         readline.set_completer_delims('\t')
         readline.parse_and_bind("tab: complete")
-        wordlist = input(colors[3] + "[*] Wordlist path? " + Style.RESET_ALL).strip()
+        wordlist = input(colors[3] + "[*] Wordlist path? (default: /usr/share/wordlists/rockyou.txt): " + Style.RESET_ALL).strip() or wordlist
         verbose = input(colors[4] + "[*] Verbose? [y/n]: " + Style.RESET_ALL).lower() == 'y'
         numbersBruteForce = input(colors[5] + "[*] Numbers of attempts? [y/n]: " + Style.RESET_ALL).lower() == 'y'
     except KeyboardInterrupt:
         print("\n[Exiting...]")
         sys.exit()
 
-    if not (hashType and userHash and wordlist):
-        print('[*] Please provide all the required options.')
+    if not (hashType and userHash):
+        print('[*] Please provide the required options.')
         sys.exit()
 
     # looks through saved hash file instead of hashing all Wordlist entries
