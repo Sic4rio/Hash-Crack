@@ -4,7 +4,7 @@ A command-line tool for cracking hashed passwords using a wordlist.
 
 ## Introduction
 
-Python Hash Cracker is a script written in Python that allows you to crack hashed passwords using a specified hash type and a wordlist. It supports various hash algorithms, including MD5, SHA1, SHA224, SHA256, SHA384, and SHA512.
+This is a script written in Python that allows you to crack hashed passwords using a specified hash type and a wordlist. It supports various hash algorithms, including MD5, SHA1, SHA224, SHA256, SHA384, and SHA512.
 
 ## Usage
 
