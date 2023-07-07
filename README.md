@@ -8,7 +8,7 @@ This is a script written in Python that allows you to crack hashed passwords usi
 
 ## Usage
 
-To use the Python Hash Cracker, follow the steps below:
+To use the tool, follow the steps below:
 
 1. Clone this repository or download the script.
 2. Open a terminal and navigate to the script's directory.
@@ -40,8 +40,6 @@ Here are some examples of how to use the Python Hash Cracker:
 Copy code
 ```$ python hash_cracker.py --Accepted-hash-type md5 --hash 5f4dcc3b5aa765d61d8327deb882cf99 --brute-force y```
 
-csharp
-Copy code
 
 ## Dependencies
 
