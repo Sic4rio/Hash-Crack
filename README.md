@@ -1,7 +1,5 @@
 # Python Hash Cracker
-<div style="width: 200px">
-  <img src="https://user-images.githubusercontent.com/75425513/228818247-c7a68838-2324-4879-aa99-f6668d2a837a.gif" alt="GIF" />
-</div>
+<img src="https://user-images.githubusercontent.com/75425513/228818247-c7a68838-2324-4879-aa99-f6668d2a837a.gif" alt="GIF" width="200" />
 
 A command-line tool for cracking hashed passwords using a wordlist.
 
