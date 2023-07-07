@@ -1,5 +1,7 @@
 # Python Hash Cracker
-![1490978656_gifs-são-parte-da-cultura-da-internet](https://user-images.githubusercontent.com/75425513/228818247-c7a68838-2324-4879-aa99-f6668d2a837a.gif)
+<div style="width: 300px">
+  <img src="https://user-images.githubusercontent.com/75425513/228818247-c7a68838-2324-4879-aa99-f6668d2a837a.gif" alt="GIF" />
+</div>
 
 A command-line tool for cracking hashed passwords using a wordlist.
 
