@@ -1,5 +1,5 @@
 # Python Hash Cracker
-<div style="width: 300px">
+<div style="width: 200px">
   <img src="https://user-images.githubusercontent.com/75425513/228818247-c7a68838-2324-4879-aa99-f6668d2a837a.gif" alt="GIF" />
 </div>
 
