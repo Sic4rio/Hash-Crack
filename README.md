@@ -1,7 +1,7 @@
 # Python Hash Cracker
 [![Python](https://img.shields.io/badge/Python-%E2%89%A5%203.x-yellow.svg)](https://www.python.org/) 
 <img src="https://img.shields.io/badge/Developed%20on-kali%20linux-blueviolet">
-[![License](https://img.shields.io/badge/License-MIT-red.svg)]
+![License](https://img.shields.io/badge/License-MIT-red.svg)
 <img src="https://img.shields.io/badge/Maintained%3F-Yes-96c40f">
 
 <img src="https://user-images.githubusercontent.com/75425513/228818247-c7a68838-2324-4879-aa99-f6668d2a837a.gif" alt="GIF" width="300" />
