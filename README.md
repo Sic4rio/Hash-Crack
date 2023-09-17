@@ -53,6 +53,6 @@ The Python Hash Cracker depends on the `colorama` package. You can install it us
 
 ### Contributors
 If you like to contribute to the development of the project, in that case, pull requests are open for you.
-Also, you can suggest an ideas and create a task in my track list
+Also, you can suggest an ideas and create a task in my track list :)
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0) [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/stanislav-web)  
